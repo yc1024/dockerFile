@@ -14,6 +14,7 @@ RUN mkdir /opt/tomcat
 RUN wget -P  /opt/tomcat http://archive.apache.org/dist/tomcat/tomcat-8/v8.5.8/bin/apache-tomcat-8.5.8.tar.gz
 RUN tar xzf /opt/tomcat/apache-tomcat-8.5.8.tar.gz -C /opt/tomcat && rm -rf /opt/tomcat/apache-tomcat-8.5.8.tar.gz
 
+RUN apt-get install vim -y
 
 #安装maven
 RUN mkdir /opt/maven
